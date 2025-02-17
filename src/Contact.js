@@ -49,7 +49,7 @@ const Contact = () => {
                     textAlign: "center",
                 }}
             >
-                <h2>Request a Quote</h2>
+                <h2>Request a Quota</h2>
                 <form onSubmit={handleSubmit} className="contact-form">
                     <label>Name:</label>
                     <input type="text" name="name" value={formData.name} onChange={handleChange} required />
@@ -63,7 +63,7 @@ const Contact = () => {
                     <label>Service Type:</label>
                     <select name="service" value={formData.service} onChange={handleChange} required>
                         <option value="" disabled>Select a service</option>
-                        <option value="wedding">Wedding Photography</option>
+                        <option value="wedding">Event Photography</option>
                         <option value="portrait">Portrait Photography</option>
                         <option value="commercial">Commercial Photography</option>
                         <option value="editing">Photo Editing</option>

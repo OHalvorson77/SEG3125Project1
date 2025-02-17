@@ -3,10 +3,10 @@ import "./ClientInfo.css";
 
 const faqsData = [
     { question: "What types of photography services do you offer?", answer: "We specialize in weddings, portraits, corporate events, branding, and lifestyle photography." },
-    { question: "How can I book a session?", answer: "You can book a session by contacting us through our website, phone, or email." },
+    { question: "How can I book a session?", answer: "Request a quota on our website and fill in the required details, we will contact you back in a timely manner with pricing and logistics." },
     { question: "What is your turnaround time for edited photos?", answer: "Our standard turnaround time is 7-14 days, depending on the project size." },
     { question: "Do you offer prints and albums?", answer: "Yes! We provide high-quality prints, albums, and digital downloads." },
-    { question: "Can you travel for photoshoots?", answer: "Absolutely! We are available for travel within and outside our service locations." }
+    { question: "Can you travel for photoshoots?", answer: "Absolutely! We are available for travel within our service locations." }
 ];
 
 const ClientInfo = () => {
@@ -19,7 +19,7 @@ const ClientInfo = () => {
     return (
         <div className="client-info-container">
             <div className="client-info-card">
-                {/* Company Introduction */}
+                
                 <div className="company-intro">
                     <h2>About Byward Photography</h2>
                     <p>
@@ -41,7 +41,7 @@ const ClientInfo = () => {
                     </p>
                 </div>
 
-                {/* FAQ Section */}
+                
                 <div className="faq-section">
                     <h3>Frequently Asked Questions</h3>
                     <ul>

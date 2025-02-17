@@ -4,20 +4,20 @@ import logo from "./logo.png";
 
 const Navbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#8B4513" }}> {/* Brown color */}
+        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#8B4513" }}> 
             <div className="container-fluid">
-                {/* Logo & Brand */}
+               
                 <Link className="navbar-brand text-white" to="/">
                     <img src={logo} alt="Logo" style={{ height: "60px", width: "auto", marginRight: "10px", borderRadius: "10px" }} />
                 </Link>
 
-                {/* Toggler Button for Mobile View */}
+                
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse">
-                    {/* Centering the Nav Links */}
+                   
                     <ul className="navbar-nav mx-auto">  
                         <li className="nav-item">
                             <Link className="nav-link text-white" to="/services">Services</Link>
@@ -38,9 +38,9 @@ const Navbar = () => {
 
                     </ul>
 
-                    {/* Book Now Button on the Right */}
+                    
                     <div className="ms-auto">
-                        <Link className="btn btn-warning" to="/contact">Book Now</Link>
+                        <Link className="btn btn-warning" to="/contact">Request Quota</Link>
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ const galleryData = [
     id: 1, 
     title: "Golden Wedding Bliss", 
     photographer: "Alice Johnson", 
-    service: "Weddings", 
+    service: "Events", 
     description: "A beautiful wedding moment captured in golden light.", 
     cover: "https://images.pexels.com/photos/2253870/pexels-photo-2253870.jpeg?auto=compress&fit=crop&w=800" 
   },
@@ -39,7 +39,7 @@ const galleryData = [
     id: 5, 
     title: "First Dance Love", 
     photographer: "Alice Johnson", 
-    service: "Weddings", 
+    service: "Events", 
     description: "A newlywed couple sharing their first dance.", 
     cover: "https://images.pexels.com/photos/3014857/pexels-photo-3014857.jpeg?auto=compress&fit=crop&w=800" 
   },
@@ -71,7 +71,7 @@ const galleryData = [
     id: 9, 
     title: "Oceanfront Romance", 
     photographer: "Alice Johnson", 
-    service: "Weddings", 
+    service: "Events", 
     description: "A breathtaking view of the bride and groom by the ocean.", 
     cover: "https://images.pexels.com/photos/1043902/pexels-photo-1043902.jpeg?auto=compress&fit=crop&w=800" 
   },
@@ -81,7 +81,7 @@ const galleryData = [
     photographer: "Michael Lee", 
     service: "Portraits", 
     description: "An expressive black-and-white close-up portrait.", 
-    cover: "https://images.pexels.com/photos/4587665/pexels-photo-4587665.jpeg?auto=compress&fit=crop&w=800" 
+    cover: "https://th.bing.com/th/id/OIP.yzk6WNM0AFx-_YEUDWZ1yQHaE8?w=289&h=192&c=7&r=0&o=5&dpr=1.1&pid=1.7" 
   },
 ];
 
@@ -90,7 +90,7 @@ const Gallery = () => {
   const [filterService, setFilterService] = useState("");
   const [filterPhotographer, setFilterPhotographer] = useState("");
 
-  // Memoized filtering to optimize performance
+  
   const filteredGallery = useMemo(() => 
     galleryData.filter(
       (item) =>
@@ -106,7 +106,7 @@ const Gallery = () => {
         Featured Gallery
       </Typography>
 
-      {/* Filters */}
+      
       <Box display="flex" justifyContent="center" gap={2} sx={{ mb: 3 }}>
         <Select 
           value={filterService} 
@@ -117,7 +117,7 @@ const Gallery = () => {
           <MenuItem value="">All Services</MenuItem>
           <MenuItem value="Portraits">Portraits</MenuItem>
           <MenuItem value="Commercial">Commercial</MenuItem>
-          <MenuItem value="Weddings">Weddings</MenuItem>
+          <MenuItem value="Weddings">Events</MenuItem>
           <MenuItem value="Photo Editing">Photo Editing</MenuItem>
         </Select>
 
@@ -140,7 +140,7 @@ const Gallery = () => {
         {filteredGallery.map((item) => (
           <Grid item xs={12} sm={6} md={4} key={item.id}>
             <Card sx={{ boxShadow: 1, borderRadius: 2, position: "relative" }}>
-              <CardActionArea onClick={() => navigate(`/shoot/${item.title}`)}>
+              <CardActionArea onClick={() => navigate(`/shoot/1`)}>
                 {/* Image with title overlay */}
                 <Box sx={{ position: "relative" }}>
                   <CardMedia 

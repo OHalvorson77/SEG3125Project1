@@ -20,7 +20,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Ensure a 2x2 grid */
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */

@@ -12,14 +12,19 @@ import PhotographerList from "./PhotographerList.js";
 const Home = () => {
     return (
         <div className="home-container">
-            {/* Hero Section */}
             <section id="hero" className="full-screen">
-                <div className="overlay">
-                    <h1>Byward Photography</h1>
-                    <p className="lead">For all of your occasions</p>
-                    
-                </div>
-            </section>
+    <div className="overlay">
+        <div className="content">
+            <h1 className="hero-title">Byward Photography</h1>
+            <p className="hero-lead">For all of your occasions</p>
+            <a href="/gallary" class="hero-button">Explore Gallery</a>
+        </div>
+
+    </div>
+
+</section>
+
+
 
             <section id="services" className="full-screen"><Services /></section>
 

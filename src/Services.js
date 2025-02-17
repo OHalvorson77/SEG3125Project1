@@ -16,9 +16,9 @@ const services = [
 const Services = () => {
     const navigate = useNavigate();
 
-    // Function to navigate to the gallery with a pre-set filter
+    
     const handleServiceClick = (service) => {
-        navigate(`/gallary?service=${encodeURIComponent(service.filter)}`);
+        navigate(`/gallary`);
     };
 
     return (

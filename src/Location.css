@@ -1,6 +1,6 @@
 /* Page container */
 body {
-    background-image: url('./background2.png'); /* Path inside the public folder */
+    background-image: url('https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/60107ed479293a1144ffceab_6002086f72b7275b5801e725_website-hero-image.jpeg'); /* Replace with your hero image */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Makes it stay in place */

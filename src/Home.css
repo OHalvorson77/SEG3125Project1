@@ -1,49 +1,90 @@
-/* General Styles */
-.home-container {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Hero Section */
 #hero {
-    
+    position: relative;
+    background-image: url('https://cdn.prod.website-files.com/6009ec8cda7f305645c9d91b/60107ed479293a1144ffceab_6002086f72b7275b5801e725_website-hero-image.jpeg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     color: white;
-    height: 100vh;
-    position: relative;
+    text-align: center;
 }
 
-#hero .overlay {
-    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
-    padding: 20px;
-    border-radius: 10px;
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text visibility */
 }
 
-/* Services Section */
+.content {
+    z-index: 1;
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.hero-lead {
+    font-size: 1.25rem;
+    font-weight: lighter;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero-button {
+    background-color: #f9a826;
+    padding: 10px 25px;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e68921;
+}
+
+/* Style for the camera image */
+.camera-image {
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom position */
+    right: 20px; /* Adjust the right position */
+    width: 200px; /* Control the size of the camera */
+    z-index: 2;
+}
+
+
 #services {
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
     padding: 60px 20px;
 }
 
-/* Client Info Section */
+
 #clientInfo {
     background-color: #ffffff;
     color: white;
     padding: 60px 20px;
 }
 
-/* Photographers Section */
 #photographers {
     background-color: #f0f0f0; /* Light grey background */
     padding: 60px 20px;
 }
 
-/* Location Section */
+
 #location {
     background-color: #ffffff;
-    color: white;
+    color: black;
     padding: 60px 20px;
 }

@@ -23,40 +23,34 @@ const Footer = () => {
             </Typography>
           </Grid>
 
-          {/* Contact Information */}
+          
           <Grid item xs={12} sm={4}>
             <Typography variant="h6">Contact</Typography>
-            <Typography variant="body2">📍 123 Tech Street, City, Country</Typography>
-            <Typography variant="body2">📞 +1 (234) 567-8901</Typography>
+            <Typography variant="body2">📍 123 Byward Street, Ottawa, K1S 9B8</Typography>
+            <Typography variant="body2">📞 +1 (613) 456-7890</Typography>
             <Typography variant="body2">
-              ✉️ <Link href="mailto:support@yourcompany.com" color="inherit">support@yourcompany.com</Link>
+              ✉️ <Link href="mailto:contact@bywardphotography.com" color="inherit">contact@bywardphotography.com</Link>
             </Typography>
           </Grid>
 
-          {/* Useful Links */}
+          
           <Grid item xs={12} sm={4}>
             <Typography variant="h6">Useful Links</Typography>
             <Box>
-              <Link href="/about" color="inherit" sx={{ display: "block", mb: 0.5 }}>
+              <Link href="/clientInfo" color="inherit" sx={{ display: "block", mb: 0.5 }}>
                 About Us
               </Link>
               <Link href="/services" color="inherit" sx={{ display: "block", mb: 0.5 }}>
                 Services
               </Link>
-              <Link href="/faq" color="inherit" sx={{ display: "block", mb: 0.5 }}>
-                FAQ
-              </Link>
-              <Link href="/blog" color="inherit" sx={{ display: "block" }}>
-                Blog
-              </Link>
+            
             </Box>
           </Grid>
         </Grid>
 
-        {/* Bottom Footer */}
         <Box sx={{ mt: 3, pt: 2, borderTop: "1px solid #444" }}>
           <Typography variant="body2">
-            &copy; {new Date().getFullYear()} YourCompany. All rights reserved.
+            &copy; {new Date().getFullYear()} BywardPhotography. All rights reserved.
           </Typography>
         </Box>
       </Container>

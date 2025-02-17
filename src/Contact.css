@@ -1,7 +1,5 @@
-/* Full page background and centering */
 
 
-/* Form container */
 .form-container {
     background: rgba(255, 255, 255, 0.9); /* Slight transparency */
     padding: 30px;
@@ -12,7 +10,7 @@
     text-align: center;
 }
 
-/* Form elements */
+
 .contact-form {
     display: flex;
     flex-direction: column;
