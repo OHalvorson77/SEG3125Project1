@@ -1,0 +1,49 @@
+/* General Styles */
+.home-container {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+#hero {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    position: relative;
+}
+
+#hero .overlay {
+    background: rgba(0, 0, 0, 0.5); /* Adds a dark overlay */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Services Section */
+#services {
+    background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+    padding: 60px 20px;
+}
+
+/* Client Info Section */
+#clientInfo {
+    background-color: #ffffff;
+    color: white;
+    padding: 60px 20px;
+}
+
+/* Photographers Section */
+#photographers {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 60px 20px;
+}
+
+/* Location Section */
+#location {
+    background-color: #ffffff;
+    color: white;
+    padding: 60px 20px;
+}

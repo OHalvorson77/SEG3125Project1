@@ -1,40 +1,33 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import "./Home.css";
+
+import Services from "./Services";
+import Contact from "./Contact.js";
+import Location from "./Location.js";
+import ClientInfo from "./ClientInfo";
+
+import PhotographerList from "./PhotographerList.js";
+
 
 const Home = () => {
     return (
-        <div>
-            {/* Navigation Bar */}
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div className="container-fluid">
-                    <a className="navbar-brand" href="#">My Website</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link active" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Services</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+        <div className="home-container">
+            {/* Hero Section */}
+            <section id="hero" className="full-screen">
+                <div className="overlay">
+                    <h1>Byward Photography</h1>
+                    <p className="lead">For all of your occasions</p>
+                    
                 </div>
-            </nav>
+            </section>
 
-            {/* Main Content */}
-            <div className="container mt-5">
-                <h1>Welcome to My Website</h1>
-                <p>This is the homepage.</p>
-            </div>
+            <section id="services" className="full-screen"><Services /></section>
+
+            <section id="clientInfo" className="full-screen"><ClientInfo /></section>
+            
+            <section id="photographers" className="full-screen"><PhotographerList /></section>
+            <section id="location" className="full-screen"><Location /></section>
+            
         </div>
     );
 };
